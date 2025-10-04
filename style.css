@@ -88,29 +88,21 @@ main {
   background: #1ed760;
 }
 
-/* GENRES */
-.genres {
-  max-width: 920px;
-  margin: 14px auto;
-}
-.genre-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 12px;
-}
+/* Neon Cyan/Turquoise Genre Cards */
 .genre-card {
   padding: 16px;
   border-radius: 12px;
   font-weight: 700;
   text-align: center;
-  color: #fff;
-  background: #282828;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-  transition: transform .2s, background .2s;
+  color: #00F5D4; /* neon turquoise text */
+  background: linear-gradient(135deg, #00F5D4, #00CFFF);
+  box-shadow: 0 0 12px rgba(0, 245, 212, 0.8), 0 0 24px rgba(0, 207, 255, 0.6);
+  transition: transform .2s, box-shadow .2s;
 }
+
 .genre-card:hover {
-  background: #333;
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 16px rgba(0, 245, 212, 1), 0 0 32px rgba(0, 207, 255, 0.9);
 }
 
 /* Card grid */

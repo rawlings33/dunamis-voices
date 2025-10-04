@@ -88,21 +88,52 @@ main {
   background: #1ed760;
 }
 
-/* Neon Cyan/Turquoise Genre Cards */
+/* Polished Dark Genre Cards */
 .genre-card {
   padding: 16px;
   border-radius: 12px;
   font-weight: 700;
   text-align: center;
-  color: #00F5D4; /* neon turquoise text */
-  background: linear-gradient(135deg, #00F5D4, #00CFFF);
-  box-shadow: 0 0 12px rgba(0, 245, 212, 0.8), 0 0 24px rgba(0, 207, 255, 0.6);
-  transition: transform .2s, box-shadow .2s;
+  color: #fff;
+  background: #181818;
+  border: 1px solid #282828;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  transition: transform .2s, box-shadow .2s, border-color .2s, color .2s;
 }
 
+/* Default hover (Spotify green) */
 .genre-card:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 0 16px rgba(0, 245, 212, 1), 0 0 32px rgba(0, 207, 255, 0.9);
+  transform: translateY(-3px);
+  border-color: #1DB954;
+  color: #1DB954;
+  box-shadow: 0 0 12px rgba(29,185,84,0.8), 0 0 20px rgba(29,185,84,0.6);
+}
+
+/* Genre variations */
+.genre-pop:hover {
+  border-color: #1DB954; /* green */
+  color: #1DB954;
+  box-shadow: 0 0 12px rgba(29,185,84,0.8), 0 0 20px rgba(29,185,84,0.6);
+}
+.genre-jazz:hover {
+  border-color: #1E90FF; /* neon blue */
+  color: #1E90FF;
+  box-shadow: 0 0 12px rgba(30,144,255,0.8), 0 0 20px rgba(30,144,255,0.6);
+}
+.genre-rnb:hover {
+  border-color: #A259FF; /* neon purple */
+  color: #A259FF;
+  box-shadow: 0 0 12px rgba(162,89,255,0.8), 0 0 20px rgba(162,89,255,0.6);
+}
+.genre-rock:hover {
+  border-color: #FF4D6D; /* neon pink/red */
+  color: #FF4D6D;
+  box-shadow: 0 0 12px rgba(255,77,109,0.8), 0 0 20px rgba(255,77,109,0.6);
+}
+.genre-afrobeat:hover {
+  border-color: #FFB347; /* amber/orange */
+  color: #FFB347;
+  box-shadow: 0 0 12px rgba(255,179,71,0.8), 0 0 20px rgba(255,179,71,0.6);
 }
 
 /* Card grid */
